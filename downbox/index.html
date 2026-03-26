@@ -207,6 +207,13 @@
             <p class="install-note">
                 Custom port: <code>curl -sL meumeu.dev/downbox/install | PORT=9090 bash</code>
             </p>
+            <div class="install-box" style="margin-top:0.8rem">
+                <span class="prompt">$</span>
+                <code id="cmd2">docker run -d -p 8080:8080 -v ~/Downloads:/downloads meumeudev/downbox</code>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('cmd2').textContent);this.innerHTML='Copied!'">
+                    Copy
+                </button>
+            </div>
         </div>
 
         <div class="features">
@@ -228,9 +235,19 @@
                     <p>Cloudflare Tunnel or Bore. Access your downloads from anywhere.</p>
                 </div>
                 <div class="feat">
+                    <div class="feat-icon">&#128274;</div>
+                    <strong>Privacy &amp; Security</strong>
+                    <p>DNS-over-HTTPS, IP blocklists, VPN interface binding, password auth.</p>
+                </div>
+                <div class="feat">
+                    <div class="feat-icon">&#128051;</div>
+                    <strong>Docker</strong>
+                    <p>One-line deploy. ~44MB image, non-root, healthcheck included.</p>
+                </div>
+                <div class="feat">
                     <div class="feat-icon">&#129529;</div>
                     <strong>Tiny footprint</strong>
-                    <p>~7MB binary, ~25MB RAM. No Docker, no database, no dependencies.</p>
+                    <p>~7MB binary, ~25MB RAM. No database, 0 Go dependencies.</p>
                 </div>
             </div>
         </div>
