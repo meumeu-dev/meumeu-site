@@ -1,2 +1,4 @@
 /downbox/install https://raw.githubusercontent.com/meumeu-dev/downbox/main/install.sh 302
-/downbox https://meumeu-dev.github.io/downbox/ 302
+/downbox https://downbox.meumeu.dev 302
+/hop/install https://raw.githubusercontent.com/meumeu-dev/hop/master/install.sh 302
+/hop https://meumeu-dev.github.io/hop/ 302
