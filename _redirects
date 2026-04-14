@@ -1,4 +1,4 @@
 /downbox/install https://raw.githubusercontent.com/meumeu-dev/downbox/main/install.sh 302
 /hop/install https://raw.githubusercontent.com/meumeu-dev/hop/master/install.sh 302
 /hop/install.ps1 https://raw.githubusercontent.com/meumeu-dev/hop/master/install.ps1 302
-/hop/p/:code /hop/p/index.html 200
+/hop/p/* /hop/p/index.html 200
