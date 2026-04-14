@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hop — Pair</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a12;
+  color: #e4e5ea;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+}
+.card {
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+}
+h1 { font-size: 1.1rem; color: #6c5ce7; margin-bottom: 0.5rem; letter-spacing: 0.05em; }
+.code {
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #fff;
+  background: rgba(108,92,231,0.08);
+  border: 1px solid rgba(108,92,231,0.25);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  margin: 1rem 0;
+  user-select: all;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.code:hover { background: rgba(108,92,231,0.15); }
+.code.invalid {
+  color: #ff6b6b;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  padding: 2rem 1rem;
+}
+.copied {
+  color: #4ade80;
+  font-size: 0.85rem;
+  height: 1.2em;
+  margin-bottom: 0.5rem;
+}
+.cmd {
+  background: #0f0f1a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 0.85rem;
+  color: #e4e5ea;
+  text-align: left;
+  margin: 0.75rem 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.cmd .prompt { color: #6c5ce7; font-weight: 700; }
+.cmd .code-inline { color: #4ade80; }
+.hint { color: #8b8d9a; font-size: 0.85rem; margin-top: 1rem; line-height: 1.6; }
+.hint a { color: #6c5ce7; text-decoration: none; }
+.hint a:hover { text-decoration: underline; }
+.footer { margin-top: 2rem; color: #6b6d7a; font-size: 0.75rem; }
+.qr {
+  margin: 1rem auto 0;
+  display: none;
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+  background: #e4e5ea;
+  border-radius: 8px;
+}
+.qr.show { display: block; }
+.qr svg { width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>HOP PAIR</h1>
+  <div class="code" id="code" title="Cliquer pour copier">--------</div>
+  <div class="copied" id="copied"></div>
+  <div id="instructions">
+    <div class="cmd"><span class="prompt">$</span> hop pair <span class="code-inline" id="cmdcode">--------</span></div>
+    <div class="qr" id="qr"></div>
+    <p class="hint">
+      Pas encore installé ? <a href="/hop">meumeu.dev/hop</a><br>
+      Expire dans 2 minutes.
+    </p>
+  </div>
+  <div class="footer">hop — sandboxed SSH launcher</div>
+</div>
+
+<script src="qrcode.min.js"></script>
+<script>
+(function() {
+  // Extract code from path: /hop/p/<code> or ?c=<code>
+  var m = location.pathname.match(/\/hop\/p\/([a-z0-9]{8})$/i);
+  var code = m ? m[1].toLowerCase() : (new URLSearchParams(location.search).get('c') || '').toLowerCase();
+
+  var codeEl = document.getElementById('code');
+  var cmdEl = document.getElementById('cmdcode');
+  var copiedEl = document.getElementById('copied');
+
+  if (!/^[a-z0-9]{8}$/.test(code)) {
+    codeEl.classList.add('invalid');
+    codeEl.textContent = 'Code invalide — le lien doit finir par 8 caracteres (a-z, 0-9)';
+    document.getElementById('instructions').style.display = 'none';
+    return;
+  }
+
+  codeEl.textContent = code;
+  cmdEl.textContent = code;
+  document.title = 'hop pair ' + code;
+
+  codeEl.addEventListener('click', function() {
+    navigator.clipboard.writeText(code).then(function() {
+      copiedEl.textContent = 'Code copie !';
+      setTimeout(function() { copiedEl.textContent = ''; }, 1500);
+    });
+  });
+
+  // Render QR for "hop pair <code>" so scanning directly gives the command
+  var qrEl = document.getElementById('qr');
+  if (window.qrcode) {
+    try {
+      var qr = qrcode(0, 'M');
+      qr.addData('hop pair ' + code);
+      qr.make();
+      qrEl.innerHTML = qr.createSvgTag({ scalable: true, margin: 0 });
+      qrEl.classList.add('show');
+    } catch (e) { /* no-op */ }
+  }
+})();
+</script>
+</body>
+</html>
