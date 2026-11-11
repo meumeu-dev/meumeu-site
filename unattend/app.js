@@ -18,7 +18,8 @@
       sec_sys: 'Système cible', sec_loc: 'Langue & région', sec_disk: 'Disque',
       sec_machine: 'Nom de la machine', sec_account: 'Comptes', sec_oobe: 'Assistant OOBE',
       sec_win11: 'Windows 11', sec_clean: 'Nettoyage', sec_privacy: 'Vie privée',
-      sec_ui: 'Interface', sec_sysopt: 'Réglages système', sec_drv: 'Pilotes & scripts',
+      sec_ui: 'Interface', sec_sysopt: 'Réglages système', sec_net: 'Réseau Wi-Fi',
+      sec_drv: 'Pilotes & scripts',
 
       winver: 'Version de Windows', arch: 'Architecture', edition: 'Édition',
       productkey: 'Clé produit',
@@ -34,6 +35,21 @@
       copilot: 'Désactiver Copilot', qol: 'Optimisations (bundle Rufus)',
       sanpolicy: 'Disques internes hors ligne',
       bing: 'Désactiver Bing dans la recherche',
+      keyboard: 'Disposition du clavier', kb_auto: 'Identique à la langue d\'installation',
+      wifi: 'Se connecter au Wi-Fi automatiquement', ssid: 'Nom du réseau (SSID)',
+      wifipw: 'Mot de passe Wi-Fi', wifihidden: 'Réseau masqué (SSID non diffusé)',
+      users: 'Comptes supplémentaires (un par ligne)',
+      deskIcons: 'Ce PC, Réseau et Corbeille sur le bureau',
+      visualfx: 'Effets visuels : privilégier les performances',
+      startBlank: 'Menu Démarrer vide (aucune tuile épinglée)',
+      startNoRecs: 'Masquer les « Recommandations » du menu Démarrer',
+      numlock: 'Activer le pavé numérique (Verr. Num) au démarrage',
+      mouseAccel: 'Désactiver l\'accélération de la souris',
+      edgeBoost: 'Désactiver le préchargement d\'Edge',
+      applocker: 'AppLocker : bloquer l\'exécution hors Program Files / Windows',
+      vboxga: 'Installer les VirtualBox Guest Additions',
+      vmwaretools: 'Installer les VMware Tools',
+      virtio: 'Installer les pilotes VirtIO (Proxmox, KVM, QEMU)',
       privacy: 'Réduire la télémétrie',
       showExt: 'Afficher les extensions de fichiers', classicMenu: 'Menu contextuel classique',
       launchThisPC: 'Ouvrir l\'Explorateur sur Ce PC', darkMode: 'Thème sombre',
@@ -53,6 +69,14 @@
       h_cmds: 'Exécutées en admin après la première ouverture de session.', h_winold: 'Libère plusieurs Go après l\'installation.',
       h_qol: 'Copilot, OneDrive, Outlook, Teams, publicités, actualités, menu classique.',
       h_sanpolicy: 'SanPolicy=4 — pour une clé système / Windows To Go.',
+      h_wifi: 'Un profil WPA2 est créé et importé automatiquement pendant l\'installation.',
+      h_users: 'Format : nom:motdepasse:Administrators — le 3e champ est facultatif (Users par défaut).',
+      h_keyboard: 'Utile si tu installes en anglais avec un clavier AZERTY.',
+      h_start: 'Écrit le layout dans le profil par défaut : s\'applique aux nouveaux comptes.',
+      h_applocker: 'Les programmes ne se lancent plus depuis Téléchargements, Bureau ou Temp. Réversible dans gpedit.msc.',
+      h_vbx: 'Nécessite l\'ISO des Guest Additions inséré au premier démarrage.',
+      h_vmware: 'Nécessite l\'ISO VMware Tools inséré au premier démarrage.',
+      h_virtio: 'Cherche virtio-win-guest-tools.exe sur les lecteurs (ISO virtio-win).',
 
       sm_hidden: 'Masquée', sm_icon: 'Icône seule', sm_box: 'Zone de recherche',
       d_uefi: 'UEFI / GPT — effacer le disque', d_mbr: 'BIOS / MBR — effacer le disque',
@@ -62,7 +86,9 @@
       warn_username: 'Aucun compte local : l\'assistant OOBE demandera d\'en créer un.',
       warn_password: 'Mot de passe vide : le compte sera créé sans mot de passe.',
       warn_computername: 'Nom invalide : 15 caractères max, sans espace ni caractère spécial.',
-      warn_uac: 'UAC désactivé : à éviter sur une machine connectée à internet.'
+      warn_uac: 'UAC désactivé : à éviter sur une machine connectée à internet.',
+      warn_wifi: 'Wi-Fi activé mais SSID vide : rien ne sera importé.',
+      warn_users: 'Ligne de compte ignorée (nom vide ou invalide) : vérifie le format nom:motdepasse.'
     },
 
     en: {
@@ -76,7 +102,8 @@
       sec_sys: 'Target system', sec_loc: 'Language & region', sec_disk: 'Disk',
       sec_machine: 'Machine name', sec_account: 'Accounts', sec_oobe: 'OOBE assistant',
       sec_win11: 'Windows 11', sec_clean: 'Cleanup', sec_privacy: 'Privacy',
-      sec_ui: 'Interface', sec_sysopt: 'System settings', sec_drv: 'Drivers & scripts',
+      sec_ui: 'Interface', sec_sysopt: 'System settings', sec_net: 'Wi-Fi network',
+      sec_drv: 'Drivers & scripts',
 
       winver: 'Windows version', arch: 'Architecture', edition: 'Edition',
       productkey: 'Product key',
@@ -92,6 +119,21 @@
       copilot: 'Disable Copilot', qol: 'Optimizations (Rufus bundle)',
       sanpolicy: 'Internal drives offline',
       bing: 'Disable Bing in search',
+      keyboard: 'Keyboard layout', kb_auto: 'Same as the install language',
+      wifi: 'Connect to Wi-Fi automatically', ssid: 'Network name (SSID)',
+      wifipw: 'Wi-Fi password', wifihidden: 'Hidden network (SSID not broadcast)',
+      users: 'Extra accounts (one per line)',
+      deskIcons: 'This PC, Network and Recycle Bin on the desktop',
+      visualfx: 'Visual effects: best performance',
+      startBlank: 'Empty Start menu (no pinned tiles)',
+      startNoRecs: 'Hide Start menu “Recommendations”',
+      numlock: 'Turn Num Lock on at startup',
+      mouseAccel: 'Disable mouse acceleration',
+      edgeBoost: 'Disable Edge preloading',
+      applocker: 'AppLocker: block running outside Program Files / Windows',
+      vboxga: 'Install VirtualBox Guest Additions',
+      vmwaretools: 'Install VMware Tools',
+      virtio: 'Install VirtIO drivers (Proxmox, KVM, QEMU)',
       privacy: 'Reduce telemetry',
       showExt: 'Show file extensions', classicMenu: 'Classic context menu',
       launchThisPC: 'Open Explorer on This PC', darkMode: 'Dark theme',
@@ -111,6 +153,14 @@
       h_cmds: 'Run as admin after the first sign-in.', h_winold: 'Frees several GB after setup.',
       h_qol: 'Copilot, OneDrive, Outlook, Teams, ads, news, classic menu.',
       h_sanpolicy: 'SanPolicy=4 — for a system USB / Windows To Go.',
+      h_wifi: 'A WPA2 profile is created and imported automatically during setup.',
+      h_users: 'Format: name:password:Administrators — the 3rd field is optional (Users by default).',
+      h_keyboard: 'Useful if you install in English with an AZERTY keyboard.',
+      h_start: 'Writes the layout into the default profile: applies to new accounts.',
+      h_applocker: 'Programs can no longer launch from Downloads, Desktop or Temp. Reversible in gpedit.msc.',
+      h_vbx: 'Requires the Guest Additions ISO to be attached at first logon.',
+      h_vmware: 'Requires the VMware Tools ISO to be attached at first logon.',
+      h_virtio: 'Looks for virtio-win-guest-tools.exe on the drives (virtio-win ISO).',
 
       sm_hidden: 'Hidden', sm_icon: 'Icon only', sm_box: 'Search box',
       d_uefi: 'UEFI / GPT — wipe the disk', d_mbr: 'BIOS / MBR — wipe the disk',
@@ -120,7 +170,9 @@
       warn_username: 'No local account: the OOBE assistant will ask you to create one.',
       warn_password: 'Empty password: the account will have no password.',
       warn_computername: 'Invalid name: 15 characters max, no spaces or special characters.',
-      warn_uac: 'UAC disabled: avoid on a machine connected to the internet.'
+      warn_uac: 'UAC disabled: avoid on a machine connected to the internet.',
+      warn_wifi: 'Wi-Fi enabled but SSID empty: nothing will be imported.',
+      warn_users: 'Account line ignored (empty or invalid name): check the name:password format.'
     },
 
     de: {
@@ -134,7 +186,8 @@
       sec_sys: 'Zielsystem', sec_loc: 'Sprache & Region', sec_disk: 'Datenträger',
       sec_machine: 'Rechnername', sec_account: 'Konten', sec_oobe: 'OOBE-Assistent',
       sec_win11: 'Windows 11', sec_clean: 'Bereinigung', sec_privacy: 'Datenschutz',
-      sec_ui: 'Oberfläche', sec_sysopt: 'Systemeinstellungen', sec_drv: 'Treiber & Skripte',
+      sec_ui: 'Oberfläche', sec_sysopt: 'Systemeinstellungen', sec_net: 'WLAN-Netzwerk',
+      sec_drv: 'Treiber & Skripte',
 
       winver: 'Windows-Version', arch: 'Architektur', edition: 'Edition',
       productkey: 'Produktschlüssel',
@@ -150,6 +203,21 @@
       copilot: 'Copilot deaktivieren', qol: 'Optimierungen (Rufus-Paket)',
       sanpolicy: 'Interne Datenträger offline',
       bing: 'Bing in der Suche deaktivieren',
+      keyboard: 'Tastaturlayout', kb_auto: 'Wie die Installationssprache',
+      wifi: 'Automatisch mit WLAN verbinden', ssid: 'Netzwerkname (SSID)',
+      wifipw: 'WLAN-Passwort', wifihidden: 'Verborgenes Netzwerk (SSID nicht sichtbar)',
+      users: 'Zusätzliche Konten (eines pro Zeile)',
+      deskIcons: 'Dieser PC, Netzwerk und Papierkorb auf dem Desktop',
+      visualfx: 'Visuelle Effekte: beste Leistung',
+      startBlank: 'Leeres Startmenü (keine angehefteten Kacheln)',
+      startNoRecs: '„Empfohlen“ im Startmenü ausblenden',
+      numlock: 'Num-Taste beim Start aktivieren',
+      mouseAccel: 'Mausbeschleunigung deaktivieren',
+      edgeBoost: 'Edge-Vorladen deaktivieren',
+      applocker: 'AppLocker: Ausführung außerhalb von Program Files / Windows blockieren',
+      vboxga: 'VirtualBox Guest Additions installieren',
+      vmwaretools: 'VMware Tools installieren',
+      virtio: 'VirtIO-Treiber installieren (Proxmox, KVM, QEMU)',
       privacy: 'Telemetrie reduzieren',
       showExt: 'Dateiendungen anzeigen', classicMenu: 'Klassisches Kontextmenü',
       launchThisPC: 'Explorer auf „Dieser PC“ öffnen', darkMode: 'Dunkles Design',
@@ -169,6 +237,14 @@
       h_cmds: 'Laufen als Admin nach der ersten Anmeldung.', h_winold: 'Gibt mehrere GB frei.',
       h_qol: 'Copilot, OneDrive, Outlook, Teams, Werbung, News, klassisches Menü.',
       h_sanpolicy: 'SanPolicy=4 — für einen System-Stick / Windows To Go.',
+      h_wifi: 'Ein WPA2-Profil wird erstellt und während der Installation importiert.',
+      h_users: 'Format: Name:Passwort:Administrators — das 3. Feld ist optional (Standard: Users).',
+      h_keyboard: 'Nützlich bei englischer Installation mit AZERTY-Tastatur.',
+      h_start: 'Schreibt das Layout ins Standardprofil: gilt für neue Konten.',
+      h_applocker: 'Programme starten nicht mehr aus Downloads, Desktop oder Temp. Rückgängig über gpedit.msc.',
+      h_vbx: 'Erfordert das Guest-Additions-ISO bei der ersten Anmeldung.',
+      h_vmware: 'Erfordert das VMware-Tools-ISO bei der ersten Anmeldung.',
+      h_virtio: 'Sucht virtio-win-guest-tools.exe auf den Laufwerken (virtio-win-ISO).',
 
       sm_hidden: 'Ausgeblendet', sm_icon: 'Nur Symbol', sm_box: 'Suchfeld',
       d_uefi: 'UEFI / GPT — Datenträger löschen', d_mbr: 'BIOS / MBR — Datenträger löschen',
@@ -178,7 +254,9 @@
       warn_username: 'Kein lokales Konto: der OOBE-Assistent verlangt eines.',
       warn_password: 'Leeres Passwort: das Konto wird ohne Passwort erstellt.',
       warn_computername: 'Ungültiger Name: max. 15 Zeichen, keine Leer- oder Sonderzeichen.',
-      warn_uac: 'UAC deaktiviert: auf einem vernetzten Rechner nicht empfohlen.'
+      warn_uac: 'UAC deaktiviert: auf einem vernetzten Rechner nicht empfohlen.',
+      warn_wifi: 'WLAN aktiviert, aber SSID leer: es wird nichts importiert.',
+      warn_users: 'Kontozeile ignoriert (leerer oder ungültiger Name): Format Name:Passwort prüfen.'
     },
 
     es: {
@@ -192,7 +270,8 @@
       sec_sys: 'Sistema destino', sec_loc: 'Idioma y región', sec_disk: 'Disco',
       sec_machine: 'Nombre del equipo', sec_account: 'Cuentas', sec_oobe: 'Asistente OOBE',
       sec_win11: 'Windows 11', sec_clean: 'Limpieza', sec_privacy: 'Privacidad',
-      sec_ui: 'Interfaz', sec_sysopt: 'Ajustes del sistema', sec_drv: 'Controladores y scripts',
+      sec_ui: 'Interfaz', sec_sysopt: 'Ajustes del sistema', sec_net: 'Red Wi-Fi',
+      sec_drv: 'Controladores y scripts',
 
       winver: 'Versión de Windows', arch: 'Arquitectura', edition: 'Edición',
       productkey: 'Clave de producto',
@@ -208,6 +287,21 @@
       copilot: 'Desactivar Copilot', qol: 'Optimizaciones (paquete Rufus)',
       sanpolicy: 'Discos internos sin conexión',
       bing: 'Desactivar Bing en la búsqueda',
+      keyboard: 'Distribución del teclado', kb_auto: 'Igual que el idioma de instalación',
+      wifi: 'Conectar al Wi-Fi automáticamente', ssid: 'Nombre de la red (SSID)',
+      wifipw: 'Contraseña del Wi-Fi', wifihidden: 'Red oculta (SSID no difundido)',
+      users: 'Cuentas adicionales (una por línea)',
+      deskIcons: 'Este equipo, Red y Papelera en el escritorio',
+      visualfx: 'Efectos visuales: mejor rendimiento',
+      startBlank: 'Menú Inicio vacío (sin iconos anclados)',
+      startNoRecs: 'Ocultar «Recomendaciones» del menú Inicio',
+      numlock: 'Activar Bloq Num al arrancar',
+      mouseAccel: 'Desactivar la aceleración del ratón',
+      edgeBoost: 'Desactivar la precarga de Edge',
+      applocker: 'AppLocker: bloquear la ejecución fuera de Program Files / Windows',
+      vboxga: 'Instalar VirtualBox Guest Additions',
+      vmwaretools: 'Instalar VMware Tools',
+      virtio: 'Instalar controladores VirtIO (Proxmox, KVM, QEMU)',
       privacy: 'Reducir la telemetría',
       showExt: 'Mostrar extensiones de archivo', classicMenu: 'Menú contextual clásico',
       launchThisPC: 'Abrir el Explorador en Este equipo', darkMode: 'Tema oscuro',
@@ -227,6 +321,14 @@
       h_cmds: 'Se ejecutan como admin tras el primer inicio.', h_winold: 'Libera varios GB tras la instalación.',
       h_qol: 'Copilot, OneDrive, Outlook, Teams, anuncios, noticias, menú clásico.',
       h_sanpolicy: 'SanPolicy=4 — para un USB de sistema / Windows To Go.',
+      h_wifi: 'Se crea e importa un perfil WPA2 automáticamente durante la instalación.',
+      h_users: 'Formato: nombre:contraseña:Administrators — el 3er campo es opcional (Users por defecto).',
+      h_keyboard: 'Útil si instalas en inglés con un teclado AZERTY.',
+      h_start: 'Escribe el diseño en el perfil predeterminado: se aplica a las cuentas nuevas.',
+      h_applocker: 'Los programas ya no se inician desde Descargas, Escritorio o Temp. Reversible en gpedit.msc.',
+      h_vbx: 'Requiere el ISO de Guest Additions insertado en el primer inicio.',
+      h_vmware: 'Requiere el ISO de VMware Tools insertado en el primer inicio.',
+      h_virtio: 'Busca virtio-win-guest-tools.exe en las unidades (ISO virtio-win).',
 
       sm_hidden: 'Oculta', sm_icon: 'Solo icono', sm_box: 'Cuadro de búsqueda',
       d_uefi: 'UEFI / GPT — borrar el disco', d_mbr: 'BIOS / MBR — borrar el disco',
@@ -236,7 +338,9 @@
       warn_username: 'Sin cuenta local: el asistente OOBE pedirá crearla.',
       warn_password: 'Contraseña vacía: la cuenta se creará sin contraseña.',
       warn_computername: 'Nombre no válido: 15 caracteres máx., sin espacios ni símbolos.',
-      warn_uac: 'UAC desactivado: evítalo en un equipo conectado a internet.'
+      warn_uac: 'UAC desactivado: evítalo en un equipo conectado a internet.',
+      warn_wifi: 'Wi-Fi activado pero SSID vacío: no se importará nada.',
+      warn_users: 'Línea de cuenta ignorada (nombre vacío o no válido): revisa el formato nombre:contraseña.'
     }
   };
 
@@ -335,7 +439,30 @@
     ] },
     { id: 'loc', title: 'sec_loc', open: true, items: [
       { id: 'locale', type: 'locale', label: 'locale' },
-      { id: 'tz', type: 'tz', label: 'tz' }
+      { id: 'tz', type: 'tz', label: 'tz' },
+      { id: 'keyboard', type: 'select', label: 'keyboard', hint: 'h_keyboard', opts: [
+        ['', 'kb_auto'],
+        ['040c:0000040c', 'Français (AZERTY)'],
+        ['080c:0000080c', 'Belgique (AZERTY)'],
+        ['100c:0000100c', 'Suisse romande'],
+        ['0c0c:00000c0c', 'Canada français'],
+        ['0409:00000409', 'English (US)'],
+        ['0809:00000809', 'English (UK)'],
+        ['0407:00000407', 'Deutsch'],
+        ['0807:00000807', 'Deutsch (Schweiz)'],
+        ['0c07:00000c07', 'Deutsch (Österreich)'],
+        ['0a0a:00000a0a', 'Español'],
+        ['0410:00000410', 'Italiano'],
+        ['0413:00000413', 'Nederlands'],
+        ['0816:00000816', 'Português'],
+        ['0416:00000416', 'Português (Brasil)'],
+        ['0415:00000415', 'Polski'],
+        ['0419:00000419', 'Русский'],
+        ['041f:0000041f', 'Türkçe'],
+        ['0411:00000411', '日本語'],
+        ['0412:00000412', '한국어'],
+        ['0804:00000804', '中文 (简体)']
+      ] }
     ] },
     { id: 'disk', title: 'sec_disk', open: true, items: [
       { id: 'diskpart', type: 'select', label: 'diskpart', opts: [
@@ -348,7 +475,8 @@
     ] },
     { id: 'account', title: 'sec_account', open: true, items: [
       { id: 'username', type: 'text', label: 'username', def: 'User' },
-      { id: 'password', type: 'text', label: 'password', hint: 'optional' },
+      { id: 'password', type: 'password', label: 'password', hint: 'optional' },
+      { id: 'users', type: 'textarea', label: 'users', hint: 'h_users', ph: 'Alice:MotDePasse:Administrators' },
       { id: 'autologon', type: 'bool', label: 'autologon', def: true },
       { id: 'pwnever', type: 'bool', label: 'pwnever', def: true },
       { id: 'nolock', type: 'bool', label: 'nolock' }
@@ -381,8 +509,18 @@
       { id: 'hideTaskView', type: 'bool', label: 'hideTaskView' },
       { id: 'showEndTask', type: 'bool', label: 'showEndTask' },
       { id: 'trayAll', type: 'bool', label: 'trayAll' },
+      { id: 'deskIcons', type: 'bool', label: 'deskIcons' },
+      { id: 'visualfx', type: 'bool', label: 'visualfx' },
+      { id: 'startBlank', type: 'bool', label: 'startBlank', hint: 'h_start' },
+      { id: 'startNoRecs', type: 'bool', label: 'startNoRecs' },
       { id: 'searchMode', type: 'select', label: 'searchMode', opts: [
         ['2', 'sm_box'], ['1', 'sm_icon'], ['0', 'sm_hidden']] }
+    ] },
+    { id: 'net', title: 'sec_net', items: [
+      { id: 'wifi', type: 'bool', label: 'wifi', hint: 'h_wifi' },
+      { id: 'ssid', type: 'text', label: 'ssid', ph: 'MaBox-5G' },
+      { id: 'wifipw', type: 'password', label: 'wifipw' },
+      { id: 'wifihidden', type: 'bool', label: 'wifihidden' }
     ] },
     { id: 'sysopt', title: 'sec_sysopt', items: [
       { id: 'longpaths', type: 'bool', label: 'longpaths' },
@@ -393,11 +531,18 @@
       { id: 'smartscreen', type: 'bool', label: 'smartscreen' },
       { id: 'deviceenc', type: 'bool', label: 'deviceenc' },
       { id: 'sanpolicy', type: 'bool', label: 'sanpolicy', hint: 'h_sanpolicy' },
+      { id: 'applocker', type: 'bool', label: 'applocker', hint: 'h_applocker' },
+      { id: 'numlock', type: 'bool', label: 'numlock' },
+      { id: 'mouseAccel', type: 'bool', label: 'mouseAccel' },
+      { id: 'edgeBoost', type: 'bool', label: 'edgeBoost' },
       { id: 'uac', type: 'bool', label: 'uac', hint: 'h_uac', danger: true }
     ] },
     { id: 'drv', title: 'sec_drv', items: [
       { id: 'oemdrv', type: 'bool', label: 'oemdrv' },
       { id: 'drvpath', type: 'text', label: 'drvpath', hint: 'h_drvpath', def: 'C:\\Drivers' },
+      { id: 'vboxga', type: 'bool', label: 'vboxga', hint: 'h_vbx' },
+      { id: 'vmwaretools', type: 'bool', label: 'vmwaretools', hint: 'h_vmware' },
+      { id: 'virtio', type: 'bool', label: 'virtio', hint: 'h_virtio' },
       { id: 'cmds', type: 'textarea', label: 'cmds', hint: 'h_cmds', ph: 'winget install --id Mozilla.Firefox -e' }
     ] }
   ];
@@ -446,6 +591,13 @@
     if (it.type === 'number') {
       return '<div class="field">' + lbl + '<input type="number" id="' + it.id + '" value="' +
         (it.def || '0') + '" min="' + (it.min != null ? it.min : 0) + '" max="' + (it.max != null ? it.max : 99) + '"></div>';
+    }
+    if (it.type === 'text' || it.type === 'password') {
+      return '<div class="field">' + lbl + '<input type="' + it.type + '" id="' + it.id + '"' +
+        (it.def ? ' value="' + escHtml(it.def) + '"' : '') +
+        (it.ph ? ' placeholder="' + escHtml(it.ph) + '"' : '') +
+        (it.max ? ' maxlength="' + it.max + '"' : '') +
+        ' spellcheck="false" autocomplete="off"></div>';
     }
     if (it.type === 'textarea') {
       return '<div class="field">' + lbl + '<textarea id="' + it.id + '" rows="4" placeholder="' +
@@ -533,8 +685,36 @@
     ],
     taskbarLeft: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'TaskbarAl', 'REG_DWORD', 0)],
     hideTaskView: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'ShowTaskViewButton', 'REG_DWORD', 0)],
-    showEndTask: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'TaskbarEndTask', 'REG_DWORD', 1)],
+    showEndTask: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced\\TaskbarDeveloperSettings', 'TaskbarEndTask', 'REG_DWORD', 1)],
     trayAll: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer', 'EnableAutoTray', 'REG_DWORD', 0)],
+    /* 0 = visible. NewStartPanel = Win10+, ClassicStartMenu = Win7-era shell. */
+    deskIcons: (function () {
+      var paths = ['Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\HideDesktopIcons\\NewStartPanel',
+        'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\HideDesktopIcons\\ClassicStartMenu'];
+      var clsid = ['{20D04FE0-3AEA-1069-A2D8-08002B30309D}',  /* This PC */
+        '{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}',               /* Network */
+        '{645FF040-5081-101B-9F08-00AA002F954E}'];              /* Recycle Bin */
+      var a = [];
+      paths.forEach(function (p) { clsid.forEach(function (c) { a.push(HK('HKCU', p, c, 'REG_DWORD', 0)); }); });
+      return a;
+    })(),
+    visualfx: [
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects', 'VisualFXSetting', 'REG_DWORD', 2)
+    ],
+    startNoRecs: [
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'Start_IrisRecommendations', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'Start_TrackDocs', 'REG_DWORD', 0)
+    ],
+    numlock: [HK('HKCU', 'Control Panel\\Keyboard', 'InitialKeyboardIndicators', 'REG_SZ', '2')],
+    mouseAccel: [
+      HK('HKCU', 'Control Panel\\Mouse', 'MouseSpeed', 'REG_SZ', '0'),
+      HK('HKCU', 'Control Panel\\Mouse', 'MouseThreshold1', 'REG_SZ', '0'),
+      HK('HKCU', 'Control Panel\\Mouse', 'MouseThreshold2', 'REG_SZ', '0')
+    ],
+    edgeBoost: [
+      HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Edge\\Recommended', 'BackgroundModeEnabled', 'REG_DWORD', 0),
+      HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Edge\\Recommended', 'StartupBoostEnabled', 'REG_DWORD', 0)
+    ],
     appsugg: [
       HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager', 'SystemPaneSuggestionsEnabled', 'REG_DWORD', 0),
       HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager', 'SubscribedContent-338388Enabled', 'REG_DWORD', 0),
@@ -605,6 +785,87 @@
     return cmd;
   }
 
+  /* --------------------------------------------------- powershell helpers */
+  /* Quotes inside unattend CommandLine/Path are a minefield, so scripts are
+     shipped base64-encoded (UTF-16LE), exactly like Task Scheduler does. */
+
+  function b64utf16(s) {
+    var bin = '';
+    for (var i = 0; i < s.length; i++) {
+      var c = s.charCodeAt(i);
+      bin += String.fromCharCode(c & 0xff, (c >>> 8) & 0xff);
+    }
+    return btoa(bin);
+  }
+
+  function psCmd(script) {
+    return 'powershell -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -EncodedCommand ' + b64utf16(PS_PRELUDE + script);
+  }
+
+  function psStr(s) { return "'" + String(s).replace(/'/g, "''") + "'"; }
+
+  /* Single-quoted content is interpolated into "WriteFile": PS 5.1's
+     Set-Content -Encoding UTF8 writes a BOM, which breaks netsh/AppLocker
+     parsing. This writes plain UTF-8 without BOM. */
+  var PS_PRELUDE = "function WriteFile($p,$c){$u=New-Object System.Text.UTF8Encoding($false);" +
+    "[IO.File]::WriteAllText($p,$c,$u)};";
+
+  /* WPA2-PSK profile, imported for all users. */
+  function wifiScript(o) {
+    var ssid = String(o.ssid || ''), pw = String(o.wifipw || '');
+    var prof = '<?xml version="1.0" encoding="utf-8"?>' +
+      '<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">' +
+      '<name>' + esc(ssid) + '</name><SSIDConfig><SSID><name>' + esc(ssid) + '</name>' +
+      (o.wifihidden ? '<nonBroadcast>true</nonBroadcast>' : '') +
+      '</SSID></SSIDConfig><connectionType>ESS</connectionType><connectionMode>auto</connectionMode>' +
+      '<MSM><security><authEncryption><authentication>WPA2PSK</authentication>' +
+      '<encryption>AES</encryption><useOneX>false</useOneX></authEncryption>' +
+      '<sharedKey><keyType>passPhrase</keyType><protected>false</protected>' +
+      '<keyMaterial>' + esc(pw) + '</keyMaterial></sharedKey></security></MSM></WLANProfile>';
+    var f = 'C:\\Windows\\Temp\\wlan-profile.xml';
+    return '$f=' + psStr(f) + ';' +
+      'WriteFile $f ' + psStr(prof) + ';' +
+      'netsh wlan add profile filename="$f" user=all | Out-Null;' +
+      'netsh wlan set profileparameter name=' + psStr(ssid) + ' connectionmode=auto | Out-Null;';
+  }
+
+  /* Empty Start layout: no pinned tiles (Win10) and no pins on Win11 22H2+. */
+  function startScript() {
+    var xml = "<LayoutModificationTemplate Version='1' xmlns='http://schemas.microsoft.com/Start/2014/LayoutModification'>" +
+      "<LayoutOptions StartTileGroupCellWidth='6' /><DefaultLayoutOverride><StartLayoutCollection>" +
+      "<StartLayout GroupCellWidth='6' xmlns='http://schemas.microsoft.com/Start/2014/FullDefaultLayout' />" +
+      "</StartLayoutCollection></DefaultLayoutOverride></LayoutModificationTemplate>";
+    return '$d="$env:SystemDrive\\Users\\Default\\AppData\\Local\\Microsoft\\Windows\\Shell";' +
+      'New-Item -ItemType Directory -Force -Path $d | Out-Null;' +
+      'WriteFile "$d\\LayoutModification.xml" ' + psStr(xml) + ';' +
+      'WriteFile "$d\\LayoutModification.json" ' + psStr('{"pinnedList":[]}') + ';';
+  }
+
+  /* Default AppLocker rules: only Program Files and Windows may execute. */
+  function applockerScript() {
+    var pol = '<AppLockerPolicy Version="1"><RuleCollection Type="Exe" EnforcementMode="Enabled">' +
+      '<FilePathRule Id="921cc481-6e17-4653-8f75-050b80acca20" Name="Program Files" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">' +
+      '<Conditions><FilePathCondition Path="%PROGRAMFILES%\\*"/></Conditions></FilePathRule>' +
+      '<FilePathRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="Windows" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">' +
+      '<Conditions><FilePathCondition Path="%WINDIR%\\*"/></Conditions></FilePathRule>' +
+      '<FilePathRule Id="d5f5f1c9-1f4f-4c2b-9d3a-7b0e6a2c4f18" Name="Program Files (x86)" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">' +
+      '<Conditions><FilePathCondition Path="%PROGRAMFILES(X86)%\\*"/></Conditions></FilePathRule>' +
+      '</RuleCollection></AppLockerPolicy>';
+    var f = 'C:\\Windows\\Temp\\applocker.xml';
+    return 'Set-Service AppIDSvc -StartupType Automatic -ErrorAction SilentlyContinue;' +
+      'Start-Service AppIDSvc -ErrorAction SilentlyContinue;' +
+      'WriteFile ' + psStr(f) + ' ' + psStr(pol) + ';' +
+      'if (Get-Command Set-AppLockerPolicy -ErrorAction SilentlyContinue) { Set-AppLockerPolicy -XmlPolicy ' + psStr(f) + ' -Merge -ErrorAction SilentlyContinue };';
+  }
+
+  /* Look for an installer on every drive (the extra ISO/CD is mounted there). */
+  function runFromDrives(names, args) {
+    return 'Get-PSDrive -PSProvider FileSystem | ForEach-Object { ' +
+      'foreach ($n in @(' + names.map(psStr).join(',') + ')) { ' +
+      '$p = Join-Path $_.Root $n; ' +
+      'if (Test-Path -LiteralPath $p) { Start-Process -FilePath $p -ArgumentList ' + psStr(args) + ' -Wait } } }';
+  }
+
   /* ---------------------------------------------------------- xml builder */
 
   function component(name, arch, body, depth) {
@@ -620,6 +881,25 @@
   function uniq(a) {
     var seen = {}, out = [];
     a.forEach(function (x) { if (!seen[x]) { seen[x] = 1; out.push(x); } });
+    return out;
+  }
+
+  /* "name:password:Administrators" per line — group is optional. */
+  function parseUsers(txt) {
+    var out = [];
+    String(txt || '').split('\n').forEach(function (line) {
+      line = line.trim();
+      if (!line) return;
+      var p = line.split(':');
+      var name = (p[0] || '').trim().replace(/[^A-Za-z0-9._-]/g, '');
+      if (!name) return;
+      var g = (p[2] || '').trim().toLowerCase();
+      out.push({
+        name: name,
+        pw: p.length > 1 ? p[1] : '',
+        group: g === 'administrators' || g === 'admin' ? 'Administrators' : 'Users'
+      });
+    });
     return out;
   }
 
@@ -641,10 +921,11 @@
 
   function buildXml(o) {
     var arch = o.arch, loc = o.locale, out = '';
+    var kb = o.keyboard || loc;
 
     /* ---------------- windowsPE ---------------- */
     var pe = pad(4) + '<SetupUILanguage>\n' + pad(5) + '<UILanguage>' + esc(loc) + '</UILanguage>\n' + pad(4) + '</SetupUILanguage>\n';
-    pe += pad(4) + '<InputLocale>' + esc(loc) + '</InputLocale>\n';
+    pe += pad(4) + '<InputLocale>' + esc(kb) + '</InputLocale>\n';
     pe += pad(4) + '<SystemLocale>' + esc(loc) + '</SystemLocale>\n';
     pe += pad(4) + '<UILanguage>' + esc(loc) + '</UILanguage>\n';
     pe += pad(4) + '<UserLocale>' + esc(loc) + '</UserLocale>\n';
@@ -724,15 +1005,19 @@
       cmds.push('pnputil /add-driver "' + o.drvpath + '\\*.inf" /subdirs /install');
     }
     ['bypassnet', 'privacy', 'rdp', 'longpaths', 'psscripts', 'fastboot', 'sysrestore',
-      'smartscreen', 'uac', 'nolock', 'qol', 'copilot'].forEach(function (k) {
+      'smartscreen', 'uac', 'nolock', 'qol', 'copilot', 'edgeBoost'].forEach(function (k) {
       if (!o[k]) return;
       (REG[k] || []).forEach(function (r) { if (r.h === 'HKLM') cmds.push(regCmd(r, null)); });
     });
     if (o.searchMode != null && $('searchMode')) { /* handled below with HKLM */ }
 
+    if (o.wifi && o.ssid) cmds.push(psCmd(wifiScript(o)));
+    if (o.startBlank) cmds.push(psCmd(startScript()));
+
     var hkcu = [];
     ['showExt', 'classicMenu', 'launchThisPC', 'darkMode', 'taskbarLeft', 'hideTaskView',
-      'showEndTask', 'trayAll', 'appsugg', 'qol', 'copilot'].forEach(function (k) {
+      'showEndTask', 'trayAll', 'deskIcons', 'visualfx', 'startNoRecs', 'numlock',
+      'mouseAccel', 'appsugg', 'qol', 'copilot'].forEach(function (k) {
       if (!o[k]) return;
       (REG[k] || []).forEach(function (r) { if (r.h === 'HKCU') hkcu.push(regCmd(r, 'HKU\\MU')); });
     });
@@ -744,6 +1029,9 @@
       hkcu.forEach(function (c) { cmds.push(c); });
       cmds.push('reg unload "HKU\\MU"');
     }
+    if (o.numlock) {
+      cmds.push('reg add "HKU\\.DEFAULT\\Control Panel\\Keyboard" /v InitialKeyboardIndicators /t REG_SZ /d 2 /f');
+    }
 
     cmds = uniq(cmds);
     if (cmds.length) {
@@ -753,7 +1041,7 @@
     out += pad(2) + '</settings>\n';
 
     /* ---------------- oobeSystem ---------------- */
-    var ic = pad(4) + '<InputLocale>' + esc(loc) + '</InputLocale>\n' +
+    var ic = pad(4) + '<InputLocale>' + esc(kb) + '</InputLocale>\n' +
       pad(4) + '<SystemLocale>' + esc(loc) + '</SystemLocale>\n' +
       pad(4) + '<UILanguage>' + esc(loc) + '</UILanguage>\n' +
       pad(4) + '<UserLocale>' + esc(loc) + '</UserLocale>\n';
@@ -766,13 +1054,24 @@
     }
     sh += pad(5) + '<ProtectYourPC>3</ProtectYourPC>\n' + pad(4) + '</OOBE>\n';
 
-    if (o.username) {
-      sh += pad(4) + '<UserAccounts>\n' + pad(5) + '<LocalAccounts>\n' + pad(6) + '<LocalAccount wcm:action="add">\n';
-      sh += pad(7) + '<Name>' + esc(o.username) + '</Name>\n' + pad(7) + '<DisplayName>' + esc(o.username) + '</DisplayName>\n' +
-        pad(7) + '<Group>Administrators</Group>\n' + pad(7) + '<Password>\n' +
-        pad(8) + '<Value>' + esc(o.password) + '</Value>\n' + pad(8) + '<PlainText>true</PlainText>\n' +
-        pad(7) + '</Password>\n' + pad(6) + '</LocalAccount>\n' + pad(5) + '</LocalAccounts>\n' + pad(4) + '</UserAccounts>\n';
-      if (o.autologon) {
+    var accounts = [];
+    if (o.username) accounts.push({ name: o.username, pw: o.password, group: 'Administrators' });
+    parseUsers(o.users).forEach(function (u) {
+      var dup = accounts.some(function (a) { return a.name.toLowerCase() === u.name.toLowerCase(); });
+      if (!dup) accounts.push(u);
+    });
+
+    if (accounts.length) {
+      sh += pad(4) + '<UserAccounts>\n' + pad(5) + '<LocalAccounts>\n';
+      accounts.forEach(function (a) {
+        sh += pad(6) + '<LocalAccount wcm:action="add">\n';
+        sh += pad(7) + '<Name>' + esc(a.name) + '</Name>\n' + pad(7) + '<DisplayName>' + esc(a.name) + '</DisplayName>\n' +
+          pad(7) + '<Group>' + esc(a.group) + '</Group>\n' + pad(7) + '<Password>\n' +
+          pad(8) + '<Value>' + esc(a.pw) + '</Value>\n' + pad(8) + '<PlainText>true</PlainText>\n' +
+          pad(7) + '</Password>\n' + pad(6) + '</LocalAccount>\n';
+      });
+      sh += pad(5) + '</LocalAccounts>\n' + pad(4) + '</UserAccounts>\n';
+      if (o.autologon && o.username) {
         sh += pad(4) + '<AutoLogon>\n' + pad(5) + '<Enabled>true</Enabled>\n' +
           pad(5) + '<Username>' + esc(o.username) + '</Username>\n' + pad(5) + '<Password>\n' +
           pad(6) + '<Value>' + esc(o.password) + '</Value>\n' + pad(6) + '<PlainText>true</PlainText>\n' +
@@ -797,6 +1096,10 @@
     }
     if (o.winold) first.push('cmd /c rd /s /q C:\\Windows.old');
     if (o.pwnever) first.push('cmd /c net accounts /maxpwage:unlimited');
+    if (o.applocker) first.push(psCmd(applockerScript()));
+    if (o.vboxga) first.push(psCmd(runFromDrives(['VBoxWindowsAdditions.exe'], '/S')));
+    if (o.vmwaretools) first.push(psCmd(runFromDrives(['setup64.exe', 'setup.exe'], '/S /v "/qn REBOOT=ReallySuppress"')));
+    if (o.virtio) first.push(psCmd(runFromDrives(['virtio-win-guest-tools.exe'], '/S')));
     (o.cmds || '').split('\n').forEach(function (line) {
       line = line.trim();
       if (line) first.push('cmd /c ' + line);
@@ -845,6 +1148,8 @@
     if (!o.password && o.username) warns.push(tr('warn_password'));
     if (o.computername && !/^[A-Za-z0-9-]{1,15}$/.test(o.computername)) warns.push(tr('warn_computername'));
     if (o.uac) warns.push(tr('warn_uac'));
+    if (o.wifi && !o.ssid) warns.push(tr('warn_wifi'));
+    if (parseUsers(o.users).length < String(o.users || '').split('\n').filter(function (l) { return l.trim(); }).length) warns.push(tr('warn_users'));
 
     var w = $('warn');
     if (warns.length) { w.innerHTML = warns.map(escHtml).join('<br>'); w.classList.add('show'); }
