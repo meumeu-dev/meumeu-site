@@ -117,6 +117,7 @@
       h_gameDvr: 'Évite l\'overlay Xbox et récupère quelques FPS.',
       h_accessKeys: 'Fini la fenêtre qui s\'ouvre quand tu appuies 5 fois sur Maj.',
       h_wu: 'Les pilotes restent gérés par toi (ou le fabricant).',
+      h_noreboot: 'Windows Update ne redémarre pas tout seul quand tu es connecté. Il attend que tu fermes ta session (ou te prévient). Sinon Windows peut redémarrer en pleine journée et fermer tes fichiers.',
       h_hibernate: 'Libère plusieurs Go (fichier hiberfil.sys).',
       h_quickAccess: 'Plus de fichiers récents à l\'ouverture de l\'Explorateur.'
     },
@@ -231,6 +232,7 @@
       h_gameDvr: 'No Xbox overlay and a few more FPS.',
       h_accessKeys: 'No more popup when you press Shift 5 times.',
       h_wu: 'Drivers stay in your hands (or the vendor\'s).',
+      h_noreboot: 'Windows Update will not reboot on its own while you are signed in. It waits until you sign out (or warns you). Otherwise Windows can reboot in the middle of your day and close your files.',
       h_hibernate: 'Frees several GB (hiberfil.sys).',
       h_quickAccess: 'No recent files when opening Explorer.'
     },
@@ -345,6 +347,7 @@
       h_gameDvr: 'Kein Xbox-Overlay, ein paar FPS mehr.',
       h_accessKeys: 'Kein Fenster mehr bei 5× Umschalt.',
       h_wu: 'Treiber bleiben in deiner Hand (oder beim Hersteller).',
+      h_noreboot: 'Windows Update startet nicht selbst neu, solange du angemeldet bist. Es wartet, bis du dich abmeldest (oder warnt dich). Sonst kann Windows mitten am Tag neu starten und deine Dateien schließen.',
       h_hibernate: 'Gibt mehrere GB frei (hiberfil.sys).',
       h_quickAccess: 'Keine zuletzt verwendeten Dateien beim Öffnen.'
     },
@@ -459,6 +462,7 @@
       h_gameDvr: 'Sin overlay de Xbox y algunos FPS más.',
       h_accessKeys: 'Se acabó la ventana al pulsar Mayús 5 veces.',
       h_wu: 'Los controladores siguen en tus manos (o del fabricante).',
+      h_noreboot: 'Windows Update no reinicia solo mientras tienes la sesión abierta. Espera a que cierres sesión (o te avisa). Si no, Windows puede reiniciar en mitad del día y cerrar tus archivos.',
       h_hibernate: 'Libera varios GB (hiberfil.sys).',
       h_quickAccess: 'Sin archivos recientes al abrir el Explorador.'
     }
@@ -675,7 +679,7 @@
     ] },
     { id: 'maint', title: 'sec_maint', items: [
       { id: 'wuDrivers', type: 'bool', label: 'wuDrivers', hint: 'h_wu' },
-      { id: 'wuNoReboot', type: 'bool', label: 'wuNoReboot' },
+      { id: 'wuNoReboot', type: 'bool', label: 'wuNoReboot', hint: 'h_noreboot' },
       { id: 'deliveryOpt', type: 'bool', label: 'deliveryOpt' },
       { id: 'defaultPrinter', type: 'bool', label: 'defaultPrinter' },
       { id: 'hibernateOff', type: 'bool', label: 'hibernateOff', hint: 'h_hibernate' }
