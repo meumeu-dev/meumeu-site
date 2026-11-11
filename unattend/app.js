@@ -90,7 +90,35 @@
       warn_computername: 'Nom invalide : 15 caractères max, sans espace ni caractère spécial.',
       warn_uac: 'UAC désactivé : à éviter sur une machine connectée à internet.',
       warn_wifi: 'Wi-Fi activé mais SSID vide : rien ne sera importé.',
-      warn_users: 'Ligne de compte ignorée (nom vide ou invalide) : vérifie le format nom:motdepasse.'
+      warn_users: 'Ligne de compte ignorée (nom vide ou invalide) : vérifie le format nom:motdepasse.',
+      sec_maint: 'Mises à jour & entretien',
+      editPick: 'Choisir l\'édition pendant l\'installation',
+      gameDvr: 'Désactiver la capture Xbox / Game Bar',
+      accessKeys: 'Désactiver les raccourcis d\'accessibilité',
+      wuDrivers: 'Pas de pilotes via Windows Update',
+      wuNoReboot: 'Pas de redémarrage auto pendant une session',
+      deliveryOpt: 'Pas de partage P2P des mises à jour',
+      remoteAssist: 'Désactiver l\'Assistance à distance',
+      aadJoin: 'Bloquer l\'ajout au compte pro / scolaire',
+      defaultPrinter: 'Garder mon imprimante par défaut',
+      dynamicLighting: 'Désactiver l\'éclairage dynamique (RGB)',
+      audioDucking: 'Pas de baisse de volume pendant les appels',
+      hibernateOff: 'Désactiver la veille prolongée',
+      compactMode: 'Vue compacte de l\'Explorateur',
+      showHidden: 'Afficher les fichiers cachés et système',
+      fullPath: 'Chemin complet dans la barre de titre',
+      altTab: 'Alt+Tab : fenêtres classiques seulement',
+      quickAccess: 'Accès rapide : vider récents et fréquents',
+      meetNow: 'Masquer l\'icône « Meet Now »',
+      speech: 'Désactiver la reconnaissance vocale en ligne',
+      searchCloud: 'Recherche : pas de nuage ni d\'historique',
+      defenderNotif: 'Masquer les notifications de Sécurité Windows',
+      h_editPick: 'Le setup affiche la liste des éditions : plus besoin du nom exact de l\'image.',
+      h_gameDvr: 'Évite l\'overlay Xbox et récupère quelques FPS.',
+      h_accessKeys: 'Fini la fenêtre qui s\'ouvre quand tu appuies 5 fois sur Maj.',
+      h_wu: 'Les pilotes restent gérés par toi (ou le fabricant).',
+      h_hibernate: 'Libère plusieurs Go (fichier hiberfil.sys).',
+      h_quickAccess: 'Plus de fichiers récents à l\'ouverture de l\'Explorateur.'
     },
 
     en: {
@@ -176,7 +204,35 @@
       warn_computername: 'Invalid name: 15 characters max, no spaces or special characters.',
       warn_uac: 'UAC disabled: avoid on a machine connected to the internet.',
       warn_wifi: 'Wi-Fi enabled but SSID empty: nothing will be imported.',
-      warn_users: 'Account line ignored (empty or invalid name): check the name:password format.'
+      warn_users: 'Account line ignored (empty or invalid name): check the name:password format.',
+      sec_maint: 'Updates & maintenance',
+      editPick: 'Pick the edition during setup',
+      gameDvr: 'Disable Xbox capture / Game Bar',
+      accessKeys: 'Disable accessibility shortcuts',
+      wuDrivers: 'No drivers through Windows Update',
+      wuNoReboot: 'No automatic reboot while signed in',
+      deliveryOpt: 'No P2P update sharing',
+      remoteAssist: 'Disable Remote Assistance',
+      aadJoin: 'Block work / school account prompts',
+      defaultPrinter: 'Keep my default printer',
+      dynamicLighting: 'Disable Dynamic Lighting (RGB)',
+      audioDucking: 'No volume drop during calls',
+      hibernateOff: 'Disable hibernation',
+      compactMode: 'Compact Explorer view',
+      showHidden: 'Show hidden and system files',
+      fullPath: 'Full path in the title bar',
+      altTab: 'Alt+Tab: classic windows only',
+      quickAccess: 'Quick access: clear recent and frequent',
+      meetNow: 'Hide the “Meet Now” icon',
+      speech: 'Disable online speech recognition',
+      searchCloud: 'Search: no cloud, no history',
+      defenderNotif: 'Hide Windows Security notifications',
+      h_editPick: 'Setup shows the edition list: no need to type the exact image name.',
+      h_gameDvr: 'No Xbox overlay and a few more FPS.',
+      h_accessKeys: 'No more popup when you press Shift 5 times.',
+      h_wu: 'Drivers stay in your hands (or the vendor\'s).',
+      h_hibernate: 'Frees several GB (hiberfil.sys).',
+      h_quickAccess: 'No recent files when opening Explorer.'
     },
 
     de: {
@@ -262,7 +318,35 @@
       warn_computername: 'Ungültiger Name: max. 15 Zeichen, keine Leer- oder Sonderzeichen.',
       warn_uac: 'UAC deaktiviert: auf einem vernetzten Rechner nicht empfohlen.',
       warn_wifi: 'WLAN aktiviert, aber SSID leer: es wird nichts importiert.',
-      warn_users: 'Kontozeile ignoriert (leerer oder ungültiger Name): Format Name:Passwort prüfen.'
+      warn_users: 'Kontozeile ignoriert (leerer oder ungültiger Name): Format Name:Passwort prüfen.',
+      sec_maint: 'Updates & Wartung',
+      editPick: 'Edition während der Installation wählen',
+      gameDvr: 'Xbox-Aufnahme / Game Bar deaktivieren',
+      accessKeys: 'Barrierefreiheits-Tastenkürzel deaktivieren',
+      wuDrivers: 'Keine Treiber über Windows Update',
+      wuNoReboot: 'Kein automatischer Neustart während der Sitzung',
+      deliveryOpt: 'Kein P2P-Update-Austausch',
+      remoteAssist: 'Remoteunterstützung deaktivieren',
+      aadJoin: 'Arbeits-/Schulkonto-Aufforderungen blockieren',
+      defaultPrinter: 'Standarddrucker behalten',
+      dynamicLighting: 'Dynamische Beleuchtung (RGB) deaktivieren',
+      audioDucking: 'Keine Lautstärkeabsenkung bei Anrufen',
+      hibernateOff: 'Ruhezustand deaktivieren',
+      compactMode: 'Kompakte Explorer-Ansicht',
+      showHidden: 'Versteckte und Systemdateien anzeigen',
+      fullPath: 'Vollständiger Pfad in der Titelleiste',
+      altTab: 'Alt+Tab: nur klassische Fenster',
+      quickAccess: 'Schnellzugriff: Zuletzt/Häufig leeren',
+      meetNow: '„Meet Now“-Symbol ausblenden',
+      speech: 'Online-Spracherkennung deaktivieren',
+      searchCloud: 'Suche: keine Cloud, kein Verlauf',
+      defenderNotif: 'Windows-Sicherheitsbenachrichtigungen ausblenden',
+      h_editPick: 'Setup zeigt die Editionsliste: der exakte Image-Name ist nicht nötig.',
+      h_gameDvr: 'Kein Xbox-Overlay, ein paar FPS mehr.',
+      h_accessKeys: 'Kein Fenster mehr bei 5× Umschalt.',
+      h_wu: 'Treiber bleiben in deiner Hand (oder beim Hersteller).',
+      h_hibernate: 'Gibt mehrere GB frei (hiberfil.sys).',
+      h_quickAccess: 'Keine zuletzt verwendeten Dateien beim Öffnen.'
     },
 
     es: {
@@ -348,7 +432,35 @@
       warn_computername: 'Nombre no válido: 15 caracteres máx., sin espacios ni símbolos.',
       warn_uac: 'UAC desactivado: evítalo en un equipo conectado a internet.',
       warn_wifi: 'Wi-Fi activado pero SSID vacío: no se importará nada.',
-      warn_users: 'Línea de cuenta ignorada (nombre vacío o no válido): revisa el formato nombre:contraseña.'
+      warn_users: 'Línea de cuenta ignorada (nombre vacío o no válido): revisa el formato nombre:contraseña.',
+      sec_maint: 'Actualizaciones y mantenimiento',
+      editPick: 'Elegir la edición durante la instalación',
+      gameDvr: 'Desactivar captura de Xbox / Game Bar',
+      accessKeys: 'Desactivar atajos de accesibilidad',
+      wuDrivers: 'Sin controladores por Windows Update',
+      wuNoReboot: 'Sin reinicio automático con sesión abierta',
+      deliveryOpt: 'Sin intercambio P2P de actualizaciones',
+      remoteAssist: 'Desactivar Asistencia remota',
+      aadJoin: 'Bloquear cuentas de trabajo / escuela',
+      defaultPrinter: 'Mantener mi impresora predeterminada',
+      dynamicLighting: 'Desactivar iluminación dinámica (RGB)',
+      audioDucking: 'Sin bajar el volumen en llamadas',
+      hibernateOff: 'Desactivar la hibernación',
+      compactMode: 'Vista compacta del Explorador',
+      showHidden: 'Mostrar archivos ocultos y del sistema',
+      fullPath: 'Ruta completa en la barra de título',
+      altTab: 'Alt+Tab: solo ventanas clásicas',
+      quickAccess: 'Acceso rápido: vaciar recientes y frecuentes',
+      meetNow: 'Ocultar el icono «Meet Now»',
+      speech: 'Desactivar reconocimiento de voz en línea',
+      searchCloud: 'Búsqueda: sin nube ni historial',
+      defenderNotif: 'Ocultar notificaciones de Seguridad de Windows',
+      h_editPick: 'El programa muestra la lista de ediciones: no hace falta el nombre exacto de la imagen.',
+      h_gameDvr: 'Sin overlay de Xbox y algunos FPS más.',
+      h_accessKeys: 'Se acabó la ventana al pulsar Mayús 5 veces.',
+      h_wu: 'Los controladores siguen en tus manos (o del fabricante).',
+      h_hibernate: 'Libera varios GB (hiberfil.sys).',
+      h_quickAccess: 'Sin archivos recientes al abrir el Explorador.'
     }
   };
 
@@ -443,6 +555,7 @@
       { id: 'winver', type: 'select', label: 'winver', opts: [['11', 'Windows 11'], ['10', 'Windows 10']] },
       { id: 'arch', type: 'select', label: 'arch', opts: [['amd64', 'x64 (amd64)'], ['arm64', 'ARM64']] },
       { id: 'edition', type: 'edition', label: 'edition', hint: 'h_edition' },
+      { id: 'editPick', type: 'bool', label: 'editPick', hint: 'h_editPick' },
       { id: 'productkey', type: 'text', label: 'productkey', hint: 'optional', ph: 'XXXXX-XXXXX-XXXXX-XXXXX-XXXXX' }
     ] },
     { id: 'loc', title: 'sec_loc', open: true, items: [
@@ -506,7 +619,10 @@
       { id: 'bing', type: 'bool', label: 'bing' }
     ] },
     { id: 'privacy', title: 'sec_privacy', items: [
-      { id: 'privacy', type: 'bool', label: 'privacy' }
+      { id: 'privacy', type: 'bool', label: 'privacy' },
+      { id: 'speech', type: 'bool', label: 'speech' },
+      { id: 'searchCloud', type: 'bool', label: 'searchCloud' },
+      { id: 'defenderNotif', type: 'bool', label: 'defenderNotif' }
     ] },
     { id: 'ui', title: 'sec_ui', items: [
       { id: 'showExt', type: 'bool', label: 'showExt' },
@@ -521,6 +637,12 @@
       { id: 'visualfx', type: 'bool', label: 'visualfx' },
       { id: 'startBlank', type: 'bool', label: 'startBlank', hint: 'h_start' },
       { id: 'startNoRecs', type: 'bool', label: 'startNoRecs' },
+      { id: 'compactMode', type: 'bool', label: 'compactMode' },
+      { id: 'showHidden', type: 'bool', label: 'showHidden' },
+      { id: 'fullPath', type: 'bool', label: 'fullPath' },
+      { id: 'altTab', type: 'bool', label: 'altTab' },
+      { id: 'quickAccess', type: 'bool', label: 'quickAccess', hint: 'h_quickAccess' },
+      { id: 'meetNow', type: 'bool', label: 'meetNow' },
       { id: 'searchMode', type: 'select', label: 'searchMode', opts: [
         ['2', 'sm_box'], ['1', 'sm_icon'], ['0', 'sm_hidden']] }
     ] },
@@ -543,7 +665,20 @@
       { id: 'numlock', type: 'bool', label: 'numlock' },
       { id: 'mouseAccel', type: 'bool', label: 'mouseAccel' },
       { id: 'edgeBoost', type: 'bool', label: 'edgeBoost' },
+      { id: 'gameDvr', type: 'bool', label: 'gameDvr', hint: 'h_gameDvr' },
+      { id: 'accessKeys', type: 'bool', label: 'accessKeys', hint: 'h_accessKeys' },
+      { id: 'remoteAssist', type: 'bool', label: 'remoteAssist' },
+      { id: 'aadJoin', type: 'bool', label: 'aadJoin' },
+      { id: 'dynamicLighting', type: 'bool', label: 'dynamicLighting' },
+      { id: 'audioDucking', type: 'bool', label: 'audioDucking' },
       { id: 'uac', type: 'bool', label: 'uac', hint: 'h_uac', danger: true }
+    ] },
+    { id: 'maint', title: 'sec_maint', items: [
+      { id: 'wuDrivers', type: 'bool', label: 'wuDrivers', hint: 'h_wu' },
+      { id: 'wuNoReboot', type: 'bool', label: 'wuNoReboot' },
+      { id: 'deliveryOpt', type: 'bool', label: 'deliveryOpt' },
+      { id: 'defaultPrinter', type: 'bool', label: 'defaultPrinter' },
+      { id: 'hibernateOff', type: 'bool', label: 'hibernateOff', hint: 'h_hibernate' }
     ] },
     { id: 'drv', title: 'sec_drv', items: [
       { id: 'oemdrv', type: 'bool', label: 'oemdrv' },
@@ -636,7 +771,8 @@
       return '<details class="card"' + (sec.open ? ' open' : '') + '>' +
         '<summary><span class="num">' + (i + 1) + '</span><span data-i18n="' + sec.title + '"></span>' +
         '<svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="9 18 15 12 9 6"/></svg></summary>' +
-        '<div class="body">' + (sec.id === 'ui' || sec.id === 'sysopt' || sec.id === 'clean' || sec.id === 'privacy'
+        '<div class="body">' + (sec.id === 'ui' || sec.id === 'sysopt' || sec.id === 'clean' ||
+          sec.id === 'privacy' || sec.id === 'maint'
           ? '<div class="checks">' + sec.items.map(itemHtml).join('') + '</div>'
           : sec.items.map(itemHtml).join('')) +
         '</div></details>';
@@ -723,6 +859,67 @@
       HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Edge\\Recommended', 'BackgroundModeEnabled', 'REG_DWORD', 0),
       HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Edge\\Recommended', 'StartupBoostEnabled', 'REG_DWORD', 0)
     ],
+    gameDvr: [
+      HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\GameDVR', 'AllowGameDVR', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\GameDVR', 'AppCaptureEnabled', 'REG_DWORD', 0),
+      HK('HKCU', 'System\\GameConfigStore', 'GameDVR_Enabled', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\GameBar', 'ShowStartupPanel', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\GameBar', 'UseNexusForGameBarEnabled', 'REG_DWORD', 0)
+    ],
+    /* "2" = shortcut disabled, "available" bit still set. */
+    accessKeys: [
+      HK('HKCU', 'Control Panel\\Accessibility\\StickyKeys', 'Flags', 'REG_SZ', '2'),
+      HK('HKCU', 'Control Panel\\Accessibility\\Keyboard Response', 'Flags', 'REG_SZ', '2'),
+      HK('HKCU', 'Control Panel\\Accessibility\\ToggleKeys', 'Flags', 'REG_SZ', '34'),
+      HK('HKCU', 'Control Panel\\Accessibility\\MouseKeys', 'Flags', 'REG_SZ', '130'),
+      HK('HKCU', 'Control Panel\\Accessibility\\HighContrast', 'Flags', 'REG_SZ', '98')
+    ],
+    remoteAssist: [HK('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Remote Assistance', 'fAllowToGetHelp', 'REG_DWORD', 0)],
+    aadJoin: [HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\WorkplaceJoin', 'BlockAADWorkplaceJoin', 'REG_DWORD', 1)],
+    dynamicLighting: [
+      HK('HKCU', 'Software\\Microsoft\\Lighting', 'AmbientLightingEnabled', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Lighting', 'ControlledByForegroundApp', 'REG_DWORD', 0)
+    ],
+    audioDucking: [HK('HKCU', 'Software\\Microsoft\\Multimedia\\Audio', 'UserDuckingPreference', 'REG_DWORD', 3)],
+    wuDrivers: [HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate', 'ExcludeWUDriversInQualityUpdate', 'REG_DWORD', 1)],
+    wuNoReboot: [HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\WindowsUpdate\\AU', 'NoAutoRebootWithLoggedOnUsers', 'REG_DWORD', 1)],
+    deliveryOpt: [HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization', 'DODownloadMode', 'REG_DWORD', 0)],
+    defaultPrinter: [HK('HKCU', 'Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows', 'LegacyDefaultPrinterMode', 'REG_DWORD', 1)],
+    hibernateOff: [
+      HK('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Power', 'HibernateEnabled', 'REG_DWORD', 0),
+      HK('HKLM', 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\FlyoutMenuSettings', 'ShowHibernateOption', 'REG_DWORD', 0)
+    ],
+    compactMode: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'UseCompactMode', 'REG_DWORD', 1)],
+    showHidden: [
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'Hidden', 'REG_DWORD', 1),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'ShowSuperHidden', 'REG_DWORD', 1)
+    ],
+    fullPath: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\CabinetState', 'FullPath', 'REG_DWORD', 1)],
+    altTab: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced', 'MultiTaskingAltTabFilter', 'REG_DWORD', 3)],
+    quickAccess: [
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer', 'ShowRecent', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer', 'ShowFrequent', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Explorer', 'ShowRecommendations', 'REG_DWORD', 0)
+    ],
+    meetNow: [HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer', 'HideSCAMeetNow', 'REG_DWORD', 1)],
+    speech: [
+      HK('HKCU', 'Software\\Microsoft\\Speech_OneCore\\Settings\\OnlineSpeechPrivacy', 'HasAccepted', 'REG_DWORD', 0),
+      HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\InputPersonalization', 'AllowInputPersonalization', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Input\\TIPC', 'Enabled', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\InputPersonalization', 'RestrictImplicitTextCollection', 'REG_DWORD', 1),
+      HK('HKCU', 'Software\\Microsoft\\InputPersonalization\\TrainedDataStore', 'HarvestContacts', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Personalization\\Settings', 'AcceptedPrivacyPolicy', 'REG_DWORD', 0)
+    ],
+    searchCloud: [
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings', 'IsMSACloudSearchEnabled', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings', 'IsAADCloudSearchEnabled', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings', 'IsDynamicSearchBoxEnabled', 'REG_DWORD', 0),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\SearchSettings', 'IsDeviceSearchHistoryEnabled', 'REG_DWORD', 0)
+    ],
+    defenderNotif: [
+      HK('HKLM', 'Software\\Microsoft\\Windows Defender Security Center\\Notifications', 'DisableNotifications', 'REG_DWORD', 1),
+      HK('HKLM', 'Software\\Microsoft\\Windows Defender Security Center\\Notifications', 'DisableEnhancedNotifications', 'REG_DWORD', 1)
+    ],
     appsugg: [
       HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager', 'SystemPaneSuggestionsEnabled', 'REG_DWORD', 0),
       HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\ContentDeliveryManager', 'SubscribedContent-338388Enabled', 'REG_DWORD', 0),
@@ -752,7 +949,14 @@
       HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search', 'AllowCortana', 'REG_DWORD', 0),
       HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Dsh', 'AllowNewsAndInterests', 'REG_DWORD', 0),
       HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo', 'DisabledByDefault', 'REG_DWORD', 1),
-      HK('HKLM', 'SOFTWARE\\Microsoft\\Windows\\Windows Error Reporting', 'Disabled', 'REG_DWORD', 1)
+      HK('HKLM', 'SOFTWARE\\Microsoft\\Windows\\Windows Error Reporting', 'Disabled', 'REG_DWORD', 1),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo', 'Enabled', 'REG_DWORD', 0),
+      HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo', 'DisabledByGroupPolicy', 'REG_DWORD', 1),
+      HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent', 'DisableTailoredExperiencesWithDiagnosticData', 'REG_DWORD', 1),
+      HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\System', 'PublishUserActivities', 'REG_DWORD', 0),
+      HK('HKLM', 'SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection', 'DoNotShowFeedbackNotifications', 'REG_DWORD', 1),
+      HK('HKCU', 'Software\\Microsoft\\Windows\\CurrentVersion\\Privacy', 'TailoredExperiencesWithDiagnosticDataEnabled', 'REG_DWORD', 0),
+      HK('HKCU', 'Control Panel\\International\\User Profile', 'HttpAcceptLanguageOptOut', 'REG_DWORD', 1)
     ],
     rdp: [
       HK('HKLM', 'SYSTEM\\CurrentControlSet\\Control\\Terminal Server', 'fDenyTSConnections', 'REG_DWORD', 0)
@@ -964,14 +1168,17 @@
       setup += pad(4) + '</DiskConfiguration>\n';
     }
 
-    setup += pad(4) + '<ImageInstall>\n' + pad(5) + '<OSImage>\n' + pad(6) + '<InstallFrom>\n' + pad(7) + '<MetaData wcm:action="add">\n';
-    setup += pad(8) + '<Key>/IMAGE/NAME</Key>\n' + pad(8) + '<Value>' + esc(o.edition) + '</Value>\n';
-    setup += pad(7) + '</MetaData>\n' + pad(6) + '</InstallFrom>\n';
-    if (o.diskpart !== 'none') {
-      setup += pad(6) + '<InstallTo>\n' + pad(7) + '<DiskID>' + o.disk + '</DiskID>\n' +
-        pad(7) + '<PartitionID>' + (o.diskpart === 'uefi' ? 3 : 2) + '</PartitionID>\n' + pad(6) + '</InstallTo>\n';
+    /* No ImageInstall at all: Setup asks which edition to install. */
+    if (!o.editPick) {
+      setup += pad(4) + '<ImageInstall>\n' + pad(5) + '<OSImage>\n' + pad(6) + '<InstallFrom>\n' + pad(7) + '<MetaData wcm:action="add">\n';
+      setup += pad(8) + '<Key>/IMAGE/NAME</Key>\n' + pad(8) + '<Value>' + esc(o.edition) + '</Value>\n';
+      setup += pad(7) + '</MetaData>\n' + pad(6) + '</InstallFrom>\n';
+      if (o.diskpart !== 'none') {
+        setup += pad(6) + '<InstallTo>\n' + pad(7) + '<DiskID>' + o.disk + '</DiskID>\n' +
+          pad(7) + '<PartitionID>' + (o.diskpart === 'uefi' ? 3 : 2) + '</PartitionID>\n' + pad(6) + '</InstallTo>\n';
+      }
+      setup += pad(6) + '<WillShowUI>OnError</WillShowUI>\n' + pad(5) + '</OSImage>\n' + pad(4) + '</ImageInstall>\n';
     }
-    setup += pad(6) + '<WillShowUI>OnError</WillShowUI>\n' + pad(5) + '</OSImage>\n' + pad(4) + '</ImageInstall>\n';
 
     if (o.bypass) {
       var bp = ['BypassTPMCheck', 'BypassSecureBootCheck', 'BypassRAMCheck', 'BypassCPUCheck', 'BypassStorageCheck'];
@@ -988,6 +1195,10 @@
     if (o.productkey) {
       setup += pad(5) + '<ProductKey>\n' + pad(6) + '<Key>' + esc(o.productkey) + '</Key>\n' +
         pad(6) + '<WillShowUI>OnError</WillShowUI>\n' + pad(5) + '</ProductKey>\n';
+    } else if (o.editPick) {
+      /* Blank key: Setup keeps the edition picker on screen. */
+      setup += pad(5) + '<ProductKey>\n' + pad(6) + '<Key>00000-00000-00000-00000-00000</Key>\n' +
+        pad(6) + '<WillShowUI>Always</WillShowUI>\n' + pad(5) + '</ProductKey>\n';
     }
     setup += pad(4) + '</UserData>\n';
 
@@ -1008,27 +1219,30 @@
     sp += pad(4) + '<TimeZone>' + esc(o.tz) + '</TimeZone>\n';
     out += pad(2) + '<settings pass="specialize">\n' + component('Microsoft-Windows-Shell-Setup', arch, sp, 4);
 
-    var cmds = [];
+    var cmds = [], hkcu = [];
     if (o.oemdrv && o.drvpath) {
       cmds.push('pnputil /add-driver "' + o.drvpath + '\\*.inf" /subdirs /install');
     }
+    /* Every option that has registry entries, HKLM applied now, HKCU deferred
+       to the loaded Default-profile hive below. */
     ['bypassnet', 'privacy', 'rdp', 'longpaths', 'psscripts', 'fastboot', 'sysrestore',
-      'smartscreen', 'uac', 'nolock', 'qol', 'copilot', 'edgeBoost'].forEach(function (k) {
+      'smartscreen', 'uac', 'nolock', 'qol', 'copilot', 'edgeBoost', 'gameDvr', 'accessKeys',
+      'remoteAssist', 'aadJoin', 'dynamicLighting', 'audioDucking', 'wuDrivers', 'wuNoReboot',
+      'deliveryOpt', 'defaultPrinter', 'hibernateOff', 'searchCloud', 'speech', 'defenderNotif',
+      'showExt', 'classicMenu', 'launchThisPC', 'darkMode', 'taskbarLeft', 'hideTaskView',
+      'showEndTask', 'trayAll', 'deskIcons', 'visualfx', 'startNoRecs', 'numlock',
+      'mouseAccel', 'compactMode', 'showHidden', 'fullPath', 'altTab', 'quickAccess',
+      'meetNow', 'appsugg'].forEach(function (k) {
       if (!o[k]) return;
-      (REG[k] || []).forEach(function (r) { if (r.h === 'HKLM') cmds.push(regCmd(r, null)); });
+      (REG[k] || []).forEach(function (r) {
+        if (r.h === 'HKLM') cmds.push(regCmd(r, null));
+        else hkcu.push(regCmd(r, 'HKU\\MU'));
+      });
     });
-    if (o.searchMode != null && $('searchMode')) { /* handled below with HKLM */ }
 
     if (o.wifi && o.ssid) cmds.push(psCmd(wifiScript(o)));
     if (o.startBlank) cmds.push(psCmd(startScript()));
 
-    var hkcu = [];
-    ['showExt', 'classicMenu', 'launchThisPC', 'darkMode', 'taskbarLeft', 'hideTaskView',
-      'showEndTask', 'trayAll', 'deskIcons', 'visualfx', 'startNoRecs', 'numlock',
-      'mouseAccel', 'appsugg', 'qol', 'copilot'].forEach(function (k) {
-      if (!o[k]) return;
-      (REG[k] || []).forEach(function (r) { if (r.h === 'HKCU') hkcu.push(regCmd(r, 'HKU\\MU')); });
-    });
     if (o.searchMode != null && $('searchMode')) {
       REG.searchMode(o.searchMode).forEach(function (r) { hkcu.push(regCmd(r, 'HKU\\MU')); });
     }
@@ -1151,7 +1365,7 @@
     $('out').innerHTML = highlight(currentXml);
 
     var warns = [];
-    if (!o.edition) warns.push(tr('warn_edition'));
+    if (!o.edition && !o.editPick) warns.push(tr('warn_edition'));
     if (!o.username) warns.push(tr('warn_username'));
     if (!o.password && o.username) warns.push(tr('warn_password'));
     if (o.computername && !/^[A-Za-z0-9-]{1,15}$/.test(o.computername)) warns.push(tr('warn_computername'));
@@ -1249,6 +1463,7 @@
     fillTz();
     syncTz();
     fillEditions();
+    $('edition').disabled = $('editPick').checked;
 
     document.querySelectorAll('.langbar button').forEach(function (b) {
       b.addEventListener('click', function () { applyLang(b.getAttribute('data-lang')); });
@@ -1258,6 +1473,7 @@
       el.addEventListener('change', function () {
         if (el.id === 'winver') fillEditions();
         if (el.id === 'locale') syncTz();
+        if (el.id === 'editPick') $('edition').disabled = el.checked;
         render();
       });
     });
